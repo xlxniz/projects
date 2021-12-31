@@ -1,0 +1,49 @@
+name: night_board
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.11.0 <3.0.0"
+  flutter: ">=1.12.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  social_share_plugin: ^0.3.1+1
+  permission_handler: ^5.1.0+2
+  flutter_riverpod: ^0.14.0+3
+  image_gallery_saver: ^1.6.8
+  path_provider: ^1.6.28
+  audio_manager: ^0.7.3
+  audioplayers: 0.17.0
+  fluttertoast: ^8.0.8
+  image_picker: ^0.6.4
+  screenshot: ^1.2.3
+  provider: ^4.3.3
+  tuple: ^2.0.0
+  http: ^0.12.2
+  share: any
+
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.night_board
+        pluginClass: SharePlugin
+      ios:
+        pluginClass: SharePlugin
+
+  uses-material-design: true
+
